@@ -2,8 +2,8 @@ import React, { useRef, useEffect } from "react";
 import SmilesDrawer from "smiles-drawer";
 
 const SETTINGS = {
-  width: 800,
-  height: 400,
+  width: 400,
+  height: 200,
 };
 
 const SmileDrawerContainer = ({ smilesStr }) => {
@@ -19,7 +19,7 @@ const SmileDrawerContainer = ({ smilesStr }) => {
 
   return (
     <div>
-      <img ref={imgRef} width={300} alt="SMILES structure" />
+      <img ref={imgRef} width={SETTINGS.width} height={SETTINGS.height} alt="SMILES structure" />
     </div>
   );
 };
