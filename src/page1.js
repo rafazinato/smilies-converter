@@ -27,7 +27,7 @@ export default function Page1(props) {
     const fetchParseData = async () => {
       Papa.parse(Arquivo, {
         download: true,
-        delimiter: ";",
+        delimiter: ",",
         header: true,
         complete: (result) => {
           const parsedData = result.data;
